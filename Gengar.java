@@ -31,4 +31,12 @@ public class Gengar {
     public void alternarVariacolor() {
         this.variacolor = !this.variacolor;
     }
+    
+    public void imprimirGengar(){
+        System.out.println("Apodo: " + apodo + "| Peso: " + peso + "| Variacolor: " + variacolor);
+    }
+    
+    public String getEstadoGengar() {
+        return "Apodo: " + apodo + " | Peso: " + peso + " | Variacolor: " + variacolor;
+    }
 }
