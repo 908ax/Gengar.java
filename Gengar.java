@@ -33,10 +33,16 @@ public class Gengar {
     }
     
     public void imprimirGengar(){
-        System.out.println("Apodo: " + apodo + "| Peso: " + peso + "| Variacolor: " + variacolor);
+        System.out.println(getEstadoGengar());
     }
     
     public String getEstadoGengar() {
-        return "Apodo: " + apodo + " | Peso: " + peso + " | Variacolor: " + variacolor;
+        String estadoVariacolor;
+        if (variacolor) {
+            estadoVariacolor = "Verdadero";
+            } else {
+            estadoVariacolor = "Falso";
+        }
+        return "Apodo: " + apodo + " | Peso: " + peso + " | Variacolor: " + estadoVariacolor;
     }
 }
